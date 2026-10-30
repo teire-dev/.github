@@ -3,12 +3,14 @@
     <picture>
       <source media="(prefers-color-scheme: dark)" srcset="assets/banner-dark.png" />
       <source media="(prefers-color-scheme: light)" srcset="assets/banner-light.png" />
-      <img src="assets/banner-dark.png" width="900" alt="Teire 手入れ. When a package, API or model changes, Teire fixes your code. Beside it, a real Teire pull request that replaces the retired model gpt-4.1-nano with gpt-5.6-luna, verified: tests 1/3 before, 3/3 after." />
+      <img src="assets/banner-dark.png" width="900" alt="Teire 手入れ. When upstream breaks, Teire fixes your code. Found, fixed by Nemotron, proven by your own tests. Beside it, the live run of a real Teire fix: zod 3.25.76 to 4.6.6 in teire-dev/examples, PR #30, proven with typecheck and 4 of 4 tests passing before and after." />
     </picture>
   </a>
 </p>
 
-<h2 align="center">When a package, API or model changes, Teire fixes your code.</h2>
+<h2 align="center">When upstream breaks, Teire fixes your code.</h2>
+
+<p align="center">When a package, an API or an AI model your code depends on changes, Teire finds the lines that break, fixes them, and proves the fix with your own tests.</p>
 
 <p align="center">
   <a href="https://github.com/apps/teire-bot"><b>Install the GitHub App</b></a>
@@ -51,7 +53,7 @@ When a change reaches your code, Teire:
 4. **opens a pull request** with the quoted source, the call sites, the before/after table and the cost of every model call. When it can't prove a fix, it says so: a draft, or an issue for a person.
 
 <p align="center">
-  <img src="assets/pr.png" width="860" alt="A Teire pull request: Replace retired model gpt-4.1-nano with gpt-5.6-luna. Verified; tests 1/3 before and 3/3 after; the changed files, the verification table and the receipt." />
+  <a href="https://teire.vercel.app/runs/d1b0c4d8-a46e-4e9d-b057-30b6d12be23b"><img src="assets/run-zod.png" width="860" alt="The live run of a real Teire fix: zod 3.25.76 to 4.6.6 in teire-dev/examples. The flow from zod through dependabot-core, Nemotron 3 Ultra and a Token Factory sandbox to PR #30, and the checks: typecheck passes and 4 of 4 tests pass before and after. Proven." /></a>
 </p>
 
 ### How it works
